@@ -1,15 +1,13 @@
 package com.crud.tasks.domain;
 
-import org.springframework.boot.SpringApplication;
-import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication
-class TasksApplication {
+import lombok.AllArgsConstructor;
+import lombok.Getter;
 
-    public static void main(String[] args) {
-        SpringApplication.run(TasksApplication.class, args);
-
-    }
+@Getter
+@AllArgsConstructor
+public class Task {
+    private Long id;
+    private String title;
+    private String content;
 }
-
-
